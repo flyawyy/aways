@@ -272,7 +272,7 @@ a:hover {
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, #882227, #d13c50);
+  background: linear-gradient(135deg, #393939, #d8d8d8);
   border-radius: 8px;
   text-decoration: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -313,4 +313,26 @@ a:hover {
 .single-video .grid-item {
   width: 320px;       /* padrão short */
   aspect-ratio: 9/16;
+}
+
+body {
+  cursor: none;
+}
+
+.cursor-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;          /* antes era 120px */
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(20px);   /* antes era 40px */
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+}
+
+body {
+  cursor: none;
 }
